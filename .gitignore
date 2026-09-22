@@ -1,0 +1,9 @@
+models/
+outputs/
+uploads/
+data/*.mp4
+data/*.mov
+__pycache__/
+*.pyc
+.DS_Store
+.venv/
