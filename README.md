@@ -3,7 +3,7 @@
 **운동 코칭 영상에서 숏츠 후보와 카드뉴스를 자동으로 뽑아내는 AI 파이프라인**
 
 수업 촬영본에서 쓸 만한 구간을 찾느라 스크러빙하던 작업을 **완전 자동 처리**로 바꿨습니다.
-사람의 역할이 *찾고 만들기*에서 **고르고 다듬기**로 바뀝니다 — 30분 촬영본 기준 **붙어 있어야 하는 시간 25~35분 → 3~5분**.
+사람의 역할이 *찾고 만들기*에서 **고르고 다듬기**로 바뀝니다 — 30분 촬영본 기준 **붙어 있어야 하는 시간 25–35분 → 3–5분**.
 
 > AI 에이전트 교육 과제 — *내 도메인에서 AI로 개선 지점 찾아 PoC 만들기*
 > 도메인: 크로스핏·하이록스·기능성운동·골프피트니스·통증케어 현장 지도 + 인스타그램 콘텐츠 발행
@@ -28,8 +28,8 @@ AI 모델 3개를 하나의 파이프라인으로 엮었습니다. **GPU 불필�
 ## 빠른 시작
 
 ```bash
-git clone <이 저장소 URL>
-cd moveclip
+git clone https://github.com/reco5149-art/moveclip-poc.git
+cd moveclip-poc
 
 pip install -r requirements.txt     # 의존성 (torch 포함, 시간이 좀 걸립니다)
 bash setup_models.sh                # 모델 다운로드 (~220MB, 최초 1회)
@@ -93,7 +93,8 @@ python app.py      # http://127.0.0.1:8000
 #3    0.0s ~   9.8s ( 9.8초)  하체 반복 동작(스쿼트·런지 계열)  반복 2회  — 움직임이 커서 시선을 끎
 ```
 
-영상 결과물: [`short_1.mp4`](docs/samples/real/short_1.mp4) · [`short_2.mp4`](docs/samples/real/short_2.mp4) · [`short_3.mp4`](docs/samples/real/short_3.mp4)
+영상 결과물: [`short_1.mp4`](https://raw.githubusercontent.com/reco5149-art/moveclip-poc/main/docs/samples/real/short_1.mp4) · [`short_2.mp4`](https://raw.githubusercontent.com/reco5149-art/moveclip-poc/main/docs/samples/real/short_2.mp4) · [`short_3.mp4`](https://raw.githubusercontent.com/reco5149-art/moveclip-poc/main/docs/samples/real/short_3.mp4)  
+<sub>※ GitHub은 저장소 안의 큰 mp4를 미리보기하지 않습니다. 링크를 누르면 바로 재생·다운로드됩니다.</sub>
 부가 산출물: [카드뉴스](docs/samples/real/cards_1) · [SRT 자막](docs/samples/real/transcript.srt) · [result.json](docs/samples/real/result.json)
 
 > 결과 영상을 보면 **자막이 두 겹**입니다. 원본에 자막이 이미 박힌 완성본을 입력으로 썼기 때문입니다 — 실패 사례 ②로 기록해 뒀습니다. raw 영상을 쓰면 해결됩니다.
@@ -106,7 +107,7 @@ python app.py      # http://127.0.0.1:8000
 |---|---|---|---|
 | ![](docs/samples/short_1_thumb.jpg) | ![](docs/samples/short_2_thumb.jpg) | ![](docs/samples/short_3_thumb.jpg) | ![](docs/samples/card_01.png) |
 
-- 영상 샘플: [`docs/samples/short_1_demo.mp4`](docs/samples/short_1_demo.mp4)
+- 영상 샘플: [`short_1_demo.mp4`](https://raw.githubusercontent.com/reco5149-art/moveclip-poc/main/docs/samples/short_1_demo.mp4)
 - 원본 결과: [`docs/samples/result_sample.json`](docs/samples/result_sample.json)
 
 ---
@@ -126,7 +127,7 @@ python app.py      # http://127.0.0.1:8000
 
 ### 실제 영상이 알려준 것
 
-**버그 하나와 설계 결함 하나를 찾았습니다.** 1차 실행에서 *서서 설명하는 9초 구간을 스쿼트 3회로 오검출*했는데, 파고들어 보니 자기상관에서 주기를 잘못 뽑는 버그가 있었고(합성 영상에서는 반복이 규칙적이라 우연히 가려졌음), 더 근본적으로는 **코칭 영상에 자기상관 자체가 안 맞았습니다** — 설명하느라 반복 간격이 4.8~10.6초로 제멋대로거든요.
+**버그 하나와 설계 결함 하나를 찾았습니다.** 1차 실행에서 *서서 설명하는 9초 구간을 스쿼트 3회로 오검출*했는데, 파고들어 보니 자기상관에서 주기를 잘못 뽑는 버그가 있었고(합성 영상에서는 반복이 규칙적이라 우연히 가려졌음), 더 근본적으로는 **코칭 영상에 자기상관 자체가 안 맞았습니다** — 설명하느라 반복 간격이 4.8–10.6초로 제멋대로거든요.
 
 신호 선택 기준을 **가동범위 × 관절 우선순위**로 바꿨습니다. 코치는 말하면서 팔을 계속 쓰기 때문에 상체 신호는 오검출원이고, 무릎·고관절은 실제로 운동할 때만 움직입니다.
 
@@ -159,7 +160,7 @@ python app.py      # http://127.0.0.1:8000
 |---|---|
 | [문제 정의서](docs/01_problem.md) | 도메인, 현재의 문제, 개선 가설, 대상 사용자, 성공 기준 |
 | [AI 모델 선정 근거](docs/02_model_selection.md) | 후보 비교와 선택 이유 (SAM·Diffusion·상용 STT를 쓰지 않은 이유 포함) |
-| [개선 효과 검증 결과](docs/03_validation.md) | 정량 비교, 실패 사례 4건, 한계와 다음 스텝 |
+| [개선 효과 검증 결과](docs/03_validation.md) | 정량 비교, 실패 사례, 한계와 다음 스텝 |
 | [채점 원본](docs/validation_result.md) | `tools/evaluate.py`가 자동 생성 (기본 실행) |
 | [채점 원본 — 저fps 실패](docs/validation_result_fps2.md) · [2인 영상](docs/validation_result_2people.md) | 실패 사례 실험 결과 |
 
@@ -168,7 +169,7 @@ python app.py      # http://127.0.0.1:8000
 ## 저장소 구조
 
 ```
-moveclip/
+moveclip-poc/
 ├── main.py                  CLI 실행기
 ├── app.py                   데모 웹앱 (FastAPI)
 ├── setup_models.sh          모델 다운로드
@@ -194,10 +195,10 @@ moveclip/
 
 ## 재현 환경
 
-Python 3.11 / CPU만 사용 (GPU 불필요) / Linux·macOS
+Python 3.11 / CPU만 사용 (GPU 불필요) / Linux·macOS·Windows
 실측: 1280×720 59.6초 영상 → 총 73초 (포즈 30.4s, 렌더 42.0s)
 
-`ffmpeg`가 설치되어 있어야 합니다. (`brew install ffmpeg` / `apt install ffmpeg`)
+`ffmpeg`가 설치되어 있어야 합니다. (`brew install ffmpeg` / `apt install ffmpeg` / `winget install ffmpeg`)
 
 ---
 
