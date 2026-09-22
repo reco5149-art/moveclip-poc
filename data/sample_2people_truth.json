@@ -1,0 +1,23 @@
+{
+  "video": "data/sample_2people.mp4",
+  "fps": 30,
+  "duration": 59.6,
+  "note": "합성 테스트 영상 — 세트 구성이 곧 정답 라벨",
+  "sets": [
+    {
+      "start": 5.0,
+      "end": 21.0,
+      "reps": 8
+    },
+    {
+      "start": 27.0,
+      "end": 36.6,
+      "reps": 6
+    },
+    {
+      "start": 41.6,
+      "end": 55.6,
+      "reps": 10
+    }
+  ]
+}

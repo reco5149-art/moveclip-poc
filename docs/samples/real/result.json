@@ -1,0 +1,199 @@
+{
+  "source": "airsquat.mp4",
+  "video": {
+    "duration_sec": 107.27,
+    "resolution": "1920x1080",
+    "src_fps": 30.0,
+    "analyzed_fps": 5.0,
+    "frames_analyzed": 537,
+    "person_detect_ratio": 0.927
+  },
+  "sets_detected": [
+    {
+      "start": 0.0,
+      "end": 8.6,
+      "reps": 2,
+      "signal": "무릎각",
+      "periodicity": 0.32,
+      "period": 1.8,
+      "rom": 137.747,
+      "energy": 16.713,
+      "visibility": 0.932,
+      "rep_times": [
+        6.0,
+        7.2
+      ],
+      "duration": 8.6
+    },
+    {
+      "start": 33.6,
+      "end": 51.2,
+      "reps": 2,
+      "signal": "무릎각",
+      "periodicity": 0.564,
+      "period": 6.8,
+      "rom": 131.179,
+      "energy": 3.449,
+      "visibility": 1.0,
+      "rep_times": [
+        35.8,
+        44.0
+      ],
+      "duration": 17.6
+    },
+    {
+      "start": 55.0,
+      "end": 102.0,
+      "reps": 5,
+      "signal": "무릎각",
+      "periodicity": 0.0,
+      "period": 6.4,
+      "rom": 136.919,
+      "energy": 3.686,
+      "visibility": 1.0,
+      "rep_times": [
+        67.8,
+        74.6,
+        81.0,
+        88.6,
+        96.8
+      ],
+      "duration": 47.0
+    }
+  ],
+  "utterances": 19,
+  "clips": [
+    {
+      "rank": 1,
+      "start": 53.8,
+      "end": 98.8,
+      "score": 0.6,
+      "reps": 5,
+      "exercise": "하체 반복 동작 (스쿼트·런지 계열)",
+      "signal": "무릎각",
+      "parts": {
+        "reps": 1.0,
+        "energy": 0.018,
+        "periodicity": 0.0,
+        "visibility": 1.0,
+        "speech": 1.0
+      },
+      "reason": "반복 5회로 분량이 충분",
+      "duration": 45.0,
+      "video": "short_1.mp4",
+      "cards": [
+        "cards_1/card_01.png",
+        "cards_1/card_02.png",
+        "cards_1/card_03.png",
+        "cards_1/card_04.png",
+        "cards_1/card_05.png"
+      ],
+      "cues": [
+        {
+          "time": 47.73,
+          "text": "아십일 후 충분히 발, 발 관절이 있을 수 있게 둘 스하고 눌러준다는 느낌으로 다시 오고 옆으로 한번 볼게요",
+          "score": 1.0
+        },
+        {
+          "time": 76.53,
+          "text": "다시 돌아니다",
+          "score": 1.5
+        },
+        {
+          "time": 92.69,
+          "text": "알게 되면 충분히 더 이가 내려가는 걸 볼 수 있고요",
+          "score": 2.0
+        },
+        {
+          "time": 97.27,
+          "text": "더 쉽게 이 느낌을 찾을 수 있게 됩니다",
+          "score": 2.5
+        }
+      ],
+      "caption": "하체 반복 동작 (스쿼트·런지 계열) — 반복 5회 구간\n\n· 아십일 후 충분히 발, 발 관절이 있을 수 있게 둘 스하고 눌러준다는 느낌으로 다시 오고 옆으로 한번 볼게요\n· 다시 돌아니다\n· 알게 되면 충분히 더 이가 내려가는 걸 볼 수 있고요\n· 더 쉽게 이 느낌을 찾을 수 있게 됩니다\n\n#크로스핏 #하이록스 #기능성운동 #골프피트니스 #통증케어 #마사지 #운동루틴 #홈트 #personaltraining #movement"
+    },
+    {
+      "rank": 2,
+      "start": 32.4,
+      "end": 52.4,
+      "score": 0.52,
+      "reps": 2,
+      "exercise": "하체 반복 동작 (스쿼트·런지 계열)",
+      "signal": "무릎각",
+      "parts": {
+        "reps": 0.0,
+        "energy": 0.0,
+        "periodicity": 1.0,
+        "visibility": 1.0,
+        "speech": 0.843
+      },
+      "reason": "동작 리듬이 일정해 보기 좋음",
+      "duration": 20.0,
+      "video": "short_2.mp4",
+      "cards": [
+        "cards_2/card_01.png",
+        "cards_2/card_02.png",
+        "cards_2/card_03.png",
+        "cards_2/card_04.png",
+        "cards_2/card_05.png"
+      ],
+      "cues": [
+        {
+          "time": 12.98,
+          "text": "자세 한번 먼저 보고 어떻게 하는지 제가 한번 시 보이겠습니다",
+          "score": 3.5
+        },
+        {
+          "time": 12.98,
+          "text": "크스 코치 김영 호입니다",
+          "score": 2.5
+        },
+        {
+          "time": 12.98,
+          "text": "에어 스아 드 오늘 첫 번째 지금 5kg 플이트 갖고 하는 드입니다",
+          "score": 2.5
+        },
+        {
+          "time": 12.98,
+          "text": "얼굴 앞에 가 앞에 놓고요",
+          "score": 1.0
+        }
+      ],
+      "caption": "하체 반복 동작 (스쿼트·런지 계열) — 반복 2회 구간\n\n· 자세 한번 먼저 보고 어떻게 하는지 제가 한번 시 보이겠습니다\n· 크스 코치 김영 호입니다\n· 에어 스아 드 오늘 첫 번째 지금 5kg 플이트 갖고 하는 드입니다\n· 얼굴 앞에 가 앞에 놓고요\n\n#크로스핏 #하이록스 #기능성운동 #골프피트니스 #통증케어 #마사지 #운동루틴 #홈트 #personaltraining #movement"
+    },
+    {
+      "rank": 3,
+      "start": 0.0,
+      "end": 9.8,
+      "score": 0.45,
+      "reps": 2,
+      "exercise": "하체 반복 동작 (스쿼트·런지 계열)",
+      "signal": "무릎각",
+      "parts": {
+        "reps": 0.0,
+        "energy": 1.0,
+        "periodicity": 0.568,
+        "visibility": 0.932,
+        "speech": 0.0
+      },
+      "reason": "움직임이 커서 시선을 끎",
+      "duration": 9.8,
+      "video": "short_3.mp4",
+      "cards": [
+        "cards_3/card_01.png",
+        "cards_3/card_02.png",
+        "cards_3/card_03.png"
+      ],
+      "cues": [],
+      "caption": "하체 반복 동작 (스쿼트·런지 계열) — 반복 2회 구간\n\n· 동작 구간 자동 추출\n\n#크로스핏 #하이록스 #기능성운동 #골프피트니스 #통증케어 #마사지 #운동루틴 #홈트 #personaltraining #movement"
+    }
+  ],
+  "timing_sec": {
+    "pose": 72.83,
+    "reps": 0.01,
+    "stt": 51.97,
+    "rank": 0.0,
+    "render": 128.91,
+    "total": 253.72
+  }
+}

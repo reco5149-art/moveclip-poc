@@ -1,0 +1,168 @@
+{
+  "source": "sample_workout.mp4",
+  "video": {
+    "duration_sec": 59.6,
+    "resolution": "1280x720",
+    "src_fps": 30.0,
+    "analyzed_fps": 5.0,
+    "frames_analyzed": 298,
+    "person_detect_ratio": 1.0
+  },
+  "sets_detected": [
+    {
+      "start": 5.2,
+      "end": 20.8,
+      "reps": 8,
+      "signal": "팔꿈치각",
+      "periodicity": 0.841,
+      "period": 2.0,
+      "rom": 97.474,
+      "energy": 2.202,
+      "visibility": 1.0,
+      "rep_times": [
+        6.0,
+        8.0,
+        10.0,
+        12.0,
+        14.0,
+        16.0,
+        17.8,
+        20.0
+      ],
+      "duration": 15.6
+    },
+    {
+      "start": 27.0,
+      "end": 36.6,
+      "reps": 6,
+      "signal": "골반높이",
+      "periodicity": 0.826,
+      "period": 1.6,
+      "rom": 18.6,
+      "energy": 2.584,
+      "visibility": 1.0,
+      "rep_times": [
+        27.8,
+        29.4,
+        31.0,
+        32.6,
+        34.2,
+        35.8
+      ],
+      "duration": 9.6
+    },
+    {
+      "start": 41.8,
+      "end": 55.6,
+      "reps": 10,
+      "signal": "팔꿈치각",
+      "periodicity": 0.814,
+      "period": 1.4,
+      "rom": 78.482,
+      "energy": 2.92,
+      "visibility": 1.0,
+      "rep_times": [
+        42.4,
+        43.6,
+        45.2,
+        46.4,
+        47.8,
+        49.4,
+        50.8,
+        52.2,
+        53.4,
+        54.8
+      ],
+      "duration": 13.8
+    }
+  ],
+  "utterances": 0,
+  "clips": [
+    {
+      "rank": 1,
+      "start": 40.6,
+      "end": 56.8,
+      "score": 0.6,
+      "reps": 10,
+      "exercise": "상체 밀기·당기기 계열",
+      "signal": "팔꿈치각",
+      "parts": {
+        "reps": 1.0,
+        "energy": 1.0,
+        "periodicity": 0.0,
+        "visibility": 1.0,
+        "speech": 0.0
+      },
+      "reason": "반복 10회로 분량이 충분",
+      "duration": 16.2,
+      "video": "short_1.mp4",
+      "cards": [
+        "cards_1/card_01.png",
+        "cards_1/card_02.png",
+        "cards_1/card_03.png"
+      ],
+      "cues": [],
+      "caption": "상체 밀기·당기기 계열 — 반복 10회 구간\n\n· 동작 구간 자동 추출\n\n#크로스핏 #하이록스 #기능성운동 #골프피트니스 #통증케어 #마사지 #운동루틴 #홈트 #personaltraining #movement"
+    },
+    {
+      "rank": 2,
+      "start": 4.0,
+      "end": 22.0,
+      "score": 0.47,
+      "reps": 8,
+      "exercise": "상체 밀기·당기기 계열",
+      "signal": "팔꿈치각",
+      "parts": {
+        "reps": 0.5,
+        "energy": 0.0,
+        "periodicity": 1.0,
+        "visibility": 1.0,
+        "speech": 0.0
+      },
+      "reason": "동작 리듬이 일정해 보기 좋음",
+      "duration": 18.0,
+      "video": "short_2.mp4",
+      "cards": [
+        "cards_2/card_01.png",
+        "cards_2/card_02.png",
+        "cards_2/card_03.png"
+      ],
+      "cues": [],
+      "caption": "상체 밀기·당기기 계열 — 반복 8회 구간\n\n· 동작 구간 자동 추출\n\n#크로스핏 #하이록스 #기능성운동 #골프피트니스 #통증케어 #마사지 #운동루틴 #홈트 #personaltraining #movement"
+    },
+    {
+      "rank": 3,
+      "start": 25.8,
+      "end": 37.8,
+      "score": 0.35,
+      "reps": 6,
+      "exercise": "전신 상하 동작 (점프·버피 계열)",
+      "signal": "골반높이",
+      "parts": {
+        "reps": 0.0,
+        "energy": 0.532,
+        "periodicity": 0.446,
+        "visibility": 1.0,
+        "speech": 0.0
+      },
+      "reason": "인물이 계속 프레임에 있음",
+      "duration": 12.0,
+      "video": "short_3.mp4",
+      "cards": [
+        "cards_3/card_01.png",
+        "cards_3/card_02.png",
+        "cards_3/card_03.png"
+      ],
+      "cues": [],
+      "caption": "전신 상하 동작 (점프·버피 계열) — 반복 6회 구간\n\n· 동작 구간 자동 추출\n\n#크로스핏 #하이록스 #기능성운동 #골프피트니스 #통증케어 #마사지 #운동루틴 #홈트 #personaltraining #movement"
+    }
+  ],
+  "timing_sec": {
+    "pose": 30.4,
+    "reps": 0.02,
+    "stt": 0.06,
+    "rank": 0.0,
+    "render": 41.98,
+    "total": 72.47
+  }
+}
